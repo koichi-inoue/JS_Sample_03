@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>BOM&DOM</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <header id="HeaderBlock">
+      <h1 id="PageTitle">BOM&DOM</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">links</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section>
+        <article id="windowInfo">
+          article 01
+        </article>
+        <article id="locationInfo">
+          article 02
+        </article>
+        <article id="navigatorInfo">
+          article 03
+        </article>
+        <article id="screenInfo">
+          article 04
+        </article>
+      </section>
+
+      <aside>
+
+        <h4>Example0１</h4>
+        <form onsubmit="return false;">
+          <input id="DocumentTitle" type="text" placeholder="Document Title">
+          <input type="button" onClick="ChangeTitle()" value="OK">
+        </form>
+
+        <h4>Example02</h4>
+        <form onsubmit="return false;">
+          <input  id="TEXT" type="text" placeholder="Heading 1">
+          <input type="button" onClick="ChangeContent()" value="OK">
+        </form>
+
+        <h4>Example03</h4>
+        <form onsubmit="return false;">
+          <input id="HeaderCOL" type="text" placeholder="Header Color">
+          <input type="button" onClick="ChangeBGColor()" value="OK">
+        </form>
+
+        <h4>Example04</h4>
+        <form onsubmit="return false;">
+          <input id="PickColor" type="color">
+          <input type="button" onClick="ChangeBGColor2()" value="OK">
+        </form>
+
+        <h4>Example05</h4>
+        <form onsubmit="return false;">
+          <input type="button" onClick="ToggleTheme()" value="Toggle ThemeColor">
+        </form>
+
+        <h4>Example06</h4>
+        <form>
+          <input id="X" type="text" size="8" placeholder="INPUT X">
+          <input id="Y" type="text" size="8" placeholder="INPUT Y">
+          <p>
+            <input id="ANS" type="text" size="12" placeholder="RESULT">
+            <button type="button" onClick="CalcData()">CALC</button>
+          </p>
+        </form>
+
+      </aside>
+
+    </main>
+
+    <footer>
+       &copy; http://www.example.com
+    </footer>
+
+  </div>
+
+</body>
+</html>
